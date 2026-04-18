@@ -23,7 +23,7 @@ function App() {
             <span className="text-preset-1 text-card-green-500">$149.99</span>
             <s className="text-preset-5 text-card-grey">$169.99</s>
           </div>
-          <button className="flex flex-row items-center justify-center gap-card-100 rounded-[8px] bg-card-green-500 p-card-200 text-preset-2 text-card-white transition-colors duration-200 hover:bg-card-green-700">
+          <button className="flex cursor-pointer flex-row items-center justify-center gap-card-100 rounded-[8px] bg-card-green-500 p-card-200 text-preset-2 text-card-white transition-colors duration-200 hover:bg-card-green-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-card-green-500">
             <img
               src={cartIcon}
               alt=""
