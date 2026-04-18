@@ -3,25 +3,37 @@ import imageProduct from './assets/image-product-mobile.jpg';
 
 function App() {
   return (
-    <main className="flex flex-col items-center justify-center">
-      <figure>
-        <img
-          src={imageProduct}
-          alt="Perfume bottle of Gabrielle Essence by Chanel Paris"
-        />
-      </figure>
-      <p>Perfume</p>
-      <h1>Gabrielle Essence Eau De Parfum</h1>
-      <p>
-        A floral, solar and voluptuous interpretation composed by Olivier Polge,
-        Perfumer-Creator for the House of CHANEL.
-      </p>
-      <p>$149.99</p>
-      <p>$169.99</p>
-      <button>
-        <img src={cartIcon} alt="Shopping cart icon" />
-        Add to Cart
-      </button>
+    <main className="mx-auto flex min-h-screen flex-col items-center justify-center">
+      <article className="flex w-full max-w-[343px] flex-col overflow-hidden rounded-lg bg-card-white">
+        <figure>
+          <img
+            src={imageProduct}
+            alt="Perfume bottle of Gabrielle Essence by Chanel Paris"
+            className="w-full object-cover"
+          />
+        </figure>
+        <div className="flex flex-col gap-card-300 p-card-400">
+          <p className="text-preset-4 text-card-grey uppercase">Perfume</p>
+          <h1 className="text-preset-1">Gabrielle Essence Eau De Parfum</h1>
+          <p className="text-preset-3 text-card-grey">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div className="flex items-center gap-card-200">
+            <span className="text-preset-1 text-card-green-500">$149.99</span>
+            <s className="text-preset-5 text-card-grey">$169.99</s>
+          </div>
+          <button className="flex flex-row items-center justify-center gap-card-100 rounded-[8px] bg-card-green-500 p-card-200 text-preset-2 text-card-white transition-colors duration-200 hover:bg-card-green-700">
+            <img
+              src={cartIcon}
+              alt=""
+              aria-hidden="true"
+              className="h-[18px] w-[18px]"
+            />
+            Add to Cart
+          </button>
+        </div>
+      </article>
     </main>
   );
 }
