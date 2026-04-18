@@ -8,6 +8,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
+
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
@@ -23,6 +24,8 @@ Users should be able to:
 - See hover and focus states for interactive elements
 
 ### Screenshot
+
+<img width="1920" height="1440" alt="product preview card component shots" src="https://github.com/user-attachments/assets/6da7c60d-2e24-4e0f-8479-a13b944b4d2e" />
 
 ### Links
 
