@@ -1,18 +1,22 @@
 import cartIcon from './assets/icon-cart.svg';
 import imageProduct from './assets/image-product-mobile.jpg';
+import imageProductDesktop from './assets/image-product-desktop.jpg';
 
 function App() {
   return (
     <main className="mx-auto flex min-h-screen flex-col items-center justify-center">
-      <article className="flex w-full max-w-[343px] flex-col overflow-hidden rounded-lg bg-card-white">
-        <figure>
-          <img
-            src={imageProduct}
-            alt="Perfume bottle of Gabrielle Essence by Chanel Paris"
-            className="w-full object-cover"
-          />
+      <article className="flex w-full max-w-[343px] flex-col overflow-hidden rounded-lg bg-card-white md:max-w-[600px] md:flex-row">
+        <figure className="md:w-1/2">
+          <picture>
+            <source media="(min-width: 768px)" srcSet={imageProductDesktop} />
+            <img
+              src={imageProduct}
+              alt="Perfume bottle of Gabrielle Essence by Chanel Paris"
+              className="h-full w-full object-cover"
+            />
+          </picture>
         </figure>
-        <div className="flex flex-col gap-card-300 p-card-400">
+        <div className="flex flex-col gap-card-300 p-card-400 md:w-1/2">
           <p className="text-preset-4 text-card-grey uppercase">Perfume</p>
           <h1 className="text-preset-1">Gabrielle Essence Eau De Parfum</h1>
           <p className="text-preset-3 text-card-grey">
