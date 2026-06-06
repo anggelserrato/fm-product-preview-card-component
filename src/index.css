@@ -1,22 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import 'tailwindcss';
 
+@font-face {
+  font-display: swap;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/fraunces-v38-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/montserrat-v31-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/montserrat-v31-latin-700.woff2') format('woff2');
+}
+
 @theme {
-  --color-card-green-500: hsl(158, 36%, 37%);
-  --color-card-green-700: hsl(158, 42%, 18%);
   --color-card-black: hsl(212, 21%, 14%);
   --color-card-grey: hsl(228, 12%, 48%);
   --color-card-cream: hsl(30, 38%, 92%);
   --color-card-white: hsl(0, 0%, 100%);
-  --font-card-montserrat: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
-  --font-card-fraunces: 'Fraunces', ui-sans-serif, system-ui, sans-serif;
-  --spacing-card-50: 4px;
-  --spacing-card-100: 8px;
-  --spacing-card-200: 16px;
-  --spacing-card-300: 24px;
-  --spacing-card-400: 32px;
-  --spacing-card-500: 40px;
+  --color-card-green-500: hsl(158, 36%, 37%);
+  --color-card-green-700: hsl(158, 42%, 18%);
+  --font-sans:
+    'Montserrat', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-serif:
+    'Fraunces', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+  --spacing-card-50: 0.25rem; /* 4px */
+  --spacing-card-100: 0.5rem; /* 8px */
+  --spacing-card-200: 1rem; /* 16px */
+  --spacing-card-300: 1.5rem; /* 24px */
+  --spacing-card-400: 2rem; /* 32px */
+  --spacing-card-500: 2.5rem; /* 40px */
 }
 
 @layer base {
@@ -26,41 +51,41 @@
 }
 
 @utility text-preset-1 {
-  font-family: var(--font-card-fraunces);
+  font-family: var(--font-serif);
   font-weight: 700;
-  font-size: 32px;
-  line-height: 100%;
+  font-size: 2rem;
+  line-height: 1;
   letter-spacing: 0px;
 }
 
 @utility text-preset-2 {
-  font-family: var(--font-card-montserrat);
+  font-family: var(--font-sans);
   font-weight: 700;
-  font-size: 14px;
-  line-height: 110%;
+  font-size: 0.875rem;
+  line-height: 1.1;
   letter-spacing: 0px;
 }
 
 @utility text-preset-3 {
-  font-family: var(--font-card-montserrat);
+  font-family: var(--font-sans);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 160%;
+  font-size: 0.875rem;
+  line-height: 1.6;
   letter-spacing: 0px;
 }
 
 @utility text-preset-4 {
-  font-family: var(--font-card-montserrat);
+  font-family: var(--font-sans);
   font-weight: 500;
-  font-size: 12px;
-  line-height: 120%;
+  font-size: 0.75rem;
+  line-height: 1.2;
   letter-spacing: 5px;
 }
 
 @utility text-preset-5 {
-  font-family: var(--font-card-montserrat);
+  font-family: var(--font-sans);
   font-weight: 500;
-  font-size: 13px;
-  line-height: 120%;
+  font-size: 0.813rem;
+  line-height: 1.2;
   letter-spacing: 0px;
 }

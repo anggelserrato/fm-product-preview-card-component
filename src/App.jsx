@@ -4,7 +4,7 @@ import imageProductDesktop from './assets/image-product-desktop.jpg';
 
 function App() {
   return (
-    <main className="mx-auto flex min-h-screen flex-col items-center justify-center">
+    <main className="mx-auto flex min-h-screen flex-col items-center justify-center px-card-200">
       <article className="flex w-full max-w-[343px] flex-col overflow-hidden rounded-lg bg-card-white md:max-w-[600px] md:flex-row">
         <figure className="md:w-1/2">
           <picture>

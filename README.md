@@ -54,5 +54,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [serrato.me](https://www.serrato.dev)
+- Website - [serrato.dev](https://www.serrato.dev)
 - Frontend Mentor - [@anggelserrato](https://www.frontendmentor.io/profile/anggelserrato)
